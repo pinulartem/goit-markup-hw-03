@@ -87,6 +87,9 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -119,7 +122,10 @@ img {
 /* =====Section Hero===== */
 
 .hero {
+padding: 188px 0;
 background-color: #2e2f42;
+margin: 0;
+height: 600px;
 }
 
 .hero-title {
@@ -130,6 +136,9 @@ color: #ffffff;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    display: block;
+    margin: 0 auto 48px;
 }
 
 .button-hero {
@@ -140,6 +149,13 @@ color: #ffffff;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button-hero:hover,
@@ -152,16 +168,27 @@ color: #ffffff;
 
 /* ====== Features ====== */
 
-.features {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-list {
-
+    display: flex;
+    gap: 24px;
 }
 
 .features-item {
-
+    width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -171,6 +198,7 @@ color: #ffffff;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-item-text {
