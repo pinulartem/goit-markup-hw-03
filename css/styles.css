@@ -149,6 +149,7 @@ color: #ffffff;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     min-width: 169px;
@@ -161,7 +162,6 @@ color: #ffffff;
 .button-hero:hover,
 .button-hero:focus {
     background-color: #404BBF;
-    cursor: pointer;
 }
 
 /* ====================== */
